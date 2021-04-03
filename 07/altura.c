@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <math.h>
 
-int main (void){
-    
-    double angulo;
-    printf("Insira o valor do ângulo");
-    scanf("%.2lf",&angulo);
+#define PI 3.14159265
 
-    double senoAngulo =  sin(angulo);
+int main (void) {
+double angulo, seno, radianos;
 
-    float altura; 
-    float disancia;
+angulo = 45;   
+radianos = PI / 180;
+seno = sin(angulo*radianos);
 
-    return 0;
+double altura;
+altura = seno*angulo;
+printf("A altura alncaçade é de %2.lf. ", altura); 
+   return(0);
 }
